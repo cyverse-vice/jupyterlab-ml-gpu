@@ -105,7 +105,6 @@ RUN mkdir /module/mrcnn
 RUN mkdir /module/workspace
 WORKDIR /module
 COPY ./mrcnn /module/mrcnn
-COPY jupyter_entry.sh /module/
 RUN cd mrcnn && python setup.py install 
 RUN cd mrcnn && wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
 
